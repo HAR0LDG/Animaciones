@@ -21,7 +21,9 @@ class _HomeState extends State<Home> {
           title: const Text("Animaciones"),
         ),
         body: Center(
-          child: Container(
+          child: AnimatedContainer(
+            duration: const Duration(seconds: 1),
+            curve: Curves.easeInOut,
             width: _width,
             height: _height,
             decoration: BoxDecoration(
